@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lathavha - Quality Products for Your Home</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Updated to futuristic font combinations -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <h1>Lathavha</h1>
+                    <p>Quality • Community • Care</p>
+                </div>
+                <!-- Added mobile menu toggle -->
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="nav-links" id="navLinks">
+                    <a href="#about">About</a>
+                    <a href="#products">Products</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Added animated background elements -->
+        <div class="hero-bg-animation"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to Lathavha</h1>
+                <p class="hero-subtitle">Proudly serving our community with quality products, from fresh foods to essential home goods</p>
+                <a href="#products" class="cta-button">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Lathavha</h2>
+                    <p>Founded by Phalanndwa Thavhaziawa Sikhwivhilu, Lathavha is a proudly local business built on passion, hard work, and a commitment to quality.</p>
+                    <p>Phalanndwa, an ambitious entrepreneur with deep roots in his community, began his journey selling fresh produce and essential goods to neighbors and nearby towns. Over the years, his vision grew — to create a business that not only offers high-quality products, but also supports local farmers, suppliers, and families.</p>
+                    <p>Today, Lathavha provides a range of goods, from fresh, wholesome foods like mashontsa, achaar, and locally sourced meats, to trusted home and personal care products. Every product is carefully selected to ensure customers receive the best value and quality.</p>
+                    <div class="mission">
+                        <h3>Our Mission</h3>
+                        <p><em>To serve our community with honesty, quality, and care.</em></p>
+                    </div>
+                </div>
+                
+                <div class="founder-card">
+                    <div class="founder-image">
+                        <img src="images/prof2.jpg" alt="Phalanndwa Thavhaziawa Sikhwivhilu">
+                    </div>
+                    <div class="founder-info">
+                        <h3>Phalanndwa Thavhaziawa Sikhwivhilu</h3>
+                        <p class="founder-title">Founder & Owner</p>
+                        <button class="contact-btn" onclick="showContactInfo()">Contact Me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <p class="section-subtitle">Carefully selected for quality and value</p>
+            
+            <!-- Food Products -->
+            <div class="product-category">
+                <h3 class="category-title">Food Products</h3>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuJA8M3CtDtx1xLJHzPAvQYcPhIP3UBqCE_2P7uy6PZuzSczI&s" alt="Mashontsa">
+                        </div>
+                        <div class="product-info">
+                            <h4>Mashontsa</h4>
+                            <p>Available in 2kg packages or full sacks</p>
+                            <div class="product-options">
+                                <span class="option">2kg</span>
+                                <span class="option">Sack</span>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart('mashontsa')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4nkSjC1WTRIZ359D4PxeoxB6mNXIvGLfMAvM0vSmNuUgGIc0&s" alt="Achaar">
+                        </div>
+                        <div class="product-info">
+                            <h4>Achaar</h4>
+                            <p>Traditional pickled vegetables</p>
+                            <button class="add-to-cart" onclick="addToCart('achaar')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT23jCbbrSBR0-7jKBpVlgVitYOV50J2B5LkFNauGskayhSxCY&s" alt="Cow Meat">
+                        </div>
+                        <div class="product-info">
+                            <h4>Cow Meat</h4>
+                            <p>Fresh, locally sourced beef</p>
+                            <button class="add-to-cart" onclick="addToCart('cow-meat')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcoPjilSyL-hrxPeBc1oW_nFmUloLwLXIDC1DTwHllfXCiHG0v&s" alt="Pork">
+                        </div>
+                        <div class="product-info">
+                            <h4>Pork</h4>
+                            <p>Quality pork cuts</p>
+                            <button class="add-to-cart" onclick="addToCart('pork')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card out-of-stock">
+                        <div class="product-image">
+                            <img src="images/avo.jpg" alt="Avocados">
+                            <div class="stock-badge">Out of Stock</div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Avocados</h4>
+                            <p>Fresh, ripe avocados</p>
+                            <button class="add-to-cart" disabled>Currently Unavailable</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card out-of-stock">
+                        <div class="product-image">
+                            <img src="images/orange (1).jpg" alt="Lemons">
+                            <div class="stock-badge">Out of Stock</div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Orange</h4>
+                            <p>Fresh citrus Oranges</p>
+                            <button class="add-to-cart" disabled>Currently Unavailable</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Home Products -->
+            <div class="product-category">
+                <h3 class="category-title">Home & Personal Care</h3>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/Roochkiller.jpg" alt="Cockroach Killer">
+                        </div>
+                        <div class="product-info">
+                            <h4>Cockroach Killer</h4>
+                            <p>Effective pest control solution</p>
+                            <button class="add-to-cart" onclick="addToCart('cockroach-killer')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/tissue oil.jpg" alt="Tissue Oil">
+                        </div>
+                        <div class="product-info">
+                            <h4>Tissue Oil</h4>
+                            <p>Nourishing skin care oil</p>
+                            <button class="add-to-cart" onclick="addToCart('tissue-oil')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6tCObZjZ9gvLyuB-jSmqUjwo2beka-2X9gnHYytcYqA5TLlEA&s" alt="Tissue Oil Hand Cream">
+                        </div>
+                        <div class="product-info">
+                            <h4>Tissue Oil Hand Cream</h4>
+                            <p>Moisturizing hand care</p>
+                            <button class="add-to-cart" onclick="addToCart('hand-cream')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/wash.jpg" alt="Foam Bath Tissue Oil">
+                        </div>
+                        <div class="product-info">
+                            <h4>Foam Bath Tissue Oil</h4>
+                            <p>Luxurious bathing experience</p>
+                            <button class="add-to-cart" onclick="addToCart('foam-bath')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/cream.jpg" alt="Body Cream">
+                        </div>
+                        <div class="product-info">
+                            <h4>Body Cream</h4>
+                            <p>Nourishing body moisturizer</p>
+                            <button class="add-to-cart" onclick="addToCart('body-cream')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/perfume.jpg" alt="Perfume">
+                        </div>
+                        <div class="product-info">
+                            <h4>Perfume</h4>
+                            <p>Quality fragrances</p>
+                            <button class="add-to-cart" onclick="addToCart('perfume')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=200&width=200" alt="Sachet Mpesu">
+                        </div>
+                        <div class="product-info">
+                            <h4>Sachet Mpesu</h4>
+                            <p>Convenient laundry solution</p>
+                            <button class="add-to-cart" onclick="addToCart('sachet-mpesu')">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>Ready to place an order or have questions about our products?</p>
+            <button class="contact-btn large" onclick="showContactInfo()">Contact Lathavha</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Lathavha</h3>
+                    <p>Serving our community with quality products and care.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#about">About Us</a>
+                    <a href="#products">Products</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <a href="#products">Food Products</a>
+                    <a href="#products">Home & Personal Care</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lathavha. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeContactModal()">&times;</span>
+            <h3>Contact Information</h3>
+            <div class="contact-info">
+                <p><strong>Phalanndwa Thavhaziawa Sikhwivhilu</strong></p>
+                <p>Founder & Owner</p>
+                <div class="contact-methods">
+                    <a href="mailto:ptsikhwivhilu1@gmail.com" class="email-link">
+                        📧 phalanndwa@lathavha.co.za
+                    </a>
+                    <p class="note">Click the email above to send a message directly</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
